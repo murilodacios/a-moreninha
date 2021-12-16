@@ -19,7 +19,7 @@ export default function Home() {
         <Text textAlign="center" fontSize={{base: "2xl", md: "7xl"}} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">Nossa Nota Fiscal de cara nova, melhor e mais rápida.</Text>
         <Text textAlign="center" fontSize={{base: "md", sm: "xl"}}>Se você é contador ou empresário, não fique de fora, confira o que mudou na nossa Nota Fiscal (Pedra Bonita), ficou ainda mais rápido e fácil fazer a emissão das suas notas fiscais,
         fique por dentro das melhorias e novidades que implantamos para aprimorar o nosso sistema. Você pode mandar
-          um e-mail ou falar conosco através do chat de atendimento abaixo, nossos operadores estão prontos para responder você! Se optar por mandar um e-mail, o tempo médio de resposta é de no máximo 16 horas devido a alta demanda.
+          um e-mail ou falar conosco através do chat de atendimento abaixo, nossos operadores estão prontos para responder você! Se optar por mandar e-mail, o tempo médio de resposta é de no máximo 16 horas devido a alta demanda.
         </Text>
         <Button p="4" href="mailto:contato.fazenda@itaborai.rj.gov.br" as={Link} colorScheme="blue">Envie um e-mail para a Fazenda</Button>
         <HStack spacing="4">
