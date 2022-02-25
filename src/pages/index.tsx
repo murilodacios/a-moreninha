@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
 
-      <Script dangerouslySetInnerHTML={{
+      <Script id="countdown" dangerouslySetInnerHTML={{
         __html: `
          var countDownDate = new Date("Feb 27, 2022 12:00:00").getTime();
 
