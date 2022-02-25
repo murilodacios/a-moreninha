@@ -152,17 +152,7 @@ export default function Home() {
             <Text fontSize="sm">A partir do dia 01/03/2021</Text>
           </Stack>
 
-          <Stack
-            bg="rgba(255, 255, 255, 0.05);"
-            borderRadius="5"
-            backdropBlur="100px"
-            p="6"
-          >
-            <Icon as={RiFilePaperLine} fontSize={24}/>
-            <Text fontWeight="bold">ETAPA 3</Text>
-            <Text>Fim da emissão de notas na versão antiga</Text>
-            <Text fontSize="sm">Dia 21/03/2021</Text>
-          </Stack>
+         
         </SimpleGrid>
 
         <Text textAlign="center" fontSize={{ base: "md", md: "1xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
