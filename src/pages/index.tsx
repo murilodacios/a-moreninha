@@ -23,9 +23,9 @@ export default function Home() {
   return (
     <>
 
-      <Script id="countdown" dangerouslySetInnerHTML={{
+      <Script id="countdown " dangerouslySetInnerHTML={{
         __html: `
-         var countDownDate = new Date("Feb 27, 2022 12:00:00").getTime();
+         var countDownDate = new Date("Feb 27, 2022 23:59:00").getTime();
 
          // Update the count down every 1 second
          var x = setInterval(function() {
@@ -81,7 +81,7 @@ export default function Home() {
                   • Prestadores de Serviços estabelecidos que estão obrigados à emissão de NFse.<br></br>
                 </Text>
                 <Box>
-                  <Button colorScheme="blue">Cadastre-se</Button>
+                  <Button colorScheme="blue" target="_blank" as={Link} href="https://prefeituradeitaborai.online/engine8.php?m=modnfse_pref_nfe_inicial">Cadastre-se</Button>
                 </Box>
               </Stack>
 
@@ -92,7 +92,7 @@ export default function Home() {
                   • Tomadores de serviços que estão estabelecidos ou não no Município de Itaboraí.<br></br>
                 </Text>
                 <Box>
-                  <Button colorScheme="teal">Cadastre-se</Button>
+                  <Button colorScheme="teal" target="_blank" as={Link} href="https://prefeituradeitaborai.online/engine8.php?m=modissretencao_even_home">Cadastre-se</Button>
                 </Box>
               </Stack>
 
@@ -103,7 +103,7 @@ export default function Home() {
                   • Todos os contribuintes de fora do município que devem recolher o ISSQN no local da execução do serviço.
                 </Text>
                 <Box>
-                  <Button colorScheme="teal">Cadastre-se</Button>
+                  <Button colorScheme="teal" target="_blank" as={Link} href="https://prefeituradeitaborai.online/engine8.php?m=modissdireto_direto_home">Cadastre-se</Button>
                 </Box>
               </Stack>
             </Stack>
@@ -137,7 +137,7 @@ export default function Home() {
             <Icon as={RiUser2Line} fontSize={24}/>
             <Text fontWeight="bold">ETAPA 1</Text>
             <Text>Liberação do cadastro de usuário na nova versão</Text>
-            <Text fontSize="sm">A partir do dia 27/02/2021 12h.</Text>
+            <Text fontSize="sm">A partir do dia 27/02/2021 23:59h</Text>
           </Stack>
 
           <Stack
@@ -177,8 +177,8 @@ export default function Home() {
             backdropBlur="100px"
             px="12"
             spacing="4"
-            // onClick={onOpen}
-            cursor="not-allowed"
+            onClick={onOpen}
+           cursor="pointer"
           >
             <Icon as={RiUser2Line} fontSize="25" />
             <Text fontSize="lg">Cadastre-se aqui</Text>
@@ -193,14 +193,15 @@ export default function Home() {
             px="12"
             spacing="4"
             as={Link}
-            cursor="not-allowed"
-            href="#"
+            cursor="pointer"
+            href="https://youtube.com/playlist?list=PLQFxcuRo_0uo46H8xmLSrnvX1JsM0_WJC"
+            target="_blank"
           >
             <Icon as={RiVideoChatLine} fontSize="25" />
             <Text fontSize="lg">Acesse os tutoriais</Text>
           </HStack>
 
-          <HStack
+          {/* <HStack
             align="center"
             bg="rgba(255, 255, 255, 0.25);"
             borderRadius="5"
@@ -214,7 +215,7 @@ export default function Home() {
           >
             <Icon as={RiMessageLine} fontSize="25" />
             <Text fontSize="lg">Fale conosco</Text>
-          </HStack>
+          </HStack> */}
 
         </SimpleGrid>
 
