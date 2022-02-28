@@ -25,7 +25,7 @@ export default function Home() {
 
       <Script id="countdown " dangerouslySetInnerHTML={{
         __html: `
-         var countDownDate = new Date("Feb 27, 2022 23:59:00").getTime();
+         var countDownDate = new Date("Feb 28, 2022 00:00:00").getTime();
 
          // Update the count down every 1 second
          var x = setInterval(function() {
@@ -156,7 +156,7 @@ export default function Home() {
         </SimpleGrid>
 
         <Text textAlign="center" fontSize={{ base: "md", md: "1xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
-          Liberação da etapa 1 - Cadastro na nova versão em:
+          Liberação da etapa 2 - Emissão de notas na nova versão:
         </Text>
 
         <Text id="contador" textAlign="left" fontSize={{ base: "1xl", md: "4xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1" />
