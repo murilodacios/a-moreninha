@@ -25,7 +25,7 @@ export default function Home() {
 
       <Script id="countdown " dangerouslySetInnerHTML={{
         __html: `
-         var countDownDate = new Date("Feb 28, 2022 00:00:00").getTime();
+         var countDownDate = new Date("Feb 28, 2022 23:59:53").getTime();
 
          // Update the count down every 1 second
          var x = setInterval(function() {
