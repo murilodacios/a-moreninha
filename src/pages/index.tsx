@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
 
-      <Script id="countdown " dangerouslySetInnerHTML={{
+      {/* <Script id="countdown " dangerouslySetInnerHTML={{
         __html: `
          var countDownDate = new Date("Feb 28, 2022 23:59:53").getTime();
 
@@ -52,7 +52,7 @@ export default function Home() {
          document.getElementById("demo").innerHTML = "EXPIRED";
    }
  }, 1000);
-      `}} />
+      `}} /> */}
 
 
       <Head>
@@ -155,11 +155,11 @@ export default function Home() {
          
         </SimpleGrid>
 
-        <Text textAlign="center" fontSize={{ base: "md", md: "1xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
+        {/* <Text textAlign="center" fontSize={{ base: "md", md: "1xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
           Liberação da etapa 2 - Emissão de notas na nova versão:
         </Text>
 
-        <Text id="contador" textAlign="left" fontSize={{ base: "1xl", md: "4xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1" />
+        <Text id="contador" textAlign="left" fontSize={{ base: "1xl", md: "4xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1" /> */}
 
         <Text textAlign="justify" fontSize={{ base: "md", sm: "xl" }}>Se você é contador ou empresário, não fique de fora, confira o que mudou na nossa Nota Fiscal (A Moreninha), ficou ainda mais rápido e fácil fazer a emissão das suas notas fiscais,
           fique por dentro das melhorias e novidades que implantamos para aprimorar o nosso sistema. Você pode mandar
