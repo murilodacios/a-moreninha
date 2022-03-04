@@ -120,7 +120,7 @@ export default function Home() {
 
       <Stack align="center" m="0 auto" maxWidth="1120" spacing={8} p="4" my="6">
 
-        <Image src="/moreninha.png" w="100px"/>
+        <Image src="/moreninha.png" w="100px" />
 
         <Text textAlign="center" fontSize={{ base: "1xl", md: "4xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
           Nossa Nota Fiscal irá atualizar, uma nova versão está chegando.
@@ -134,7 +134,7 @@ export default function Home() {
             p="6"
             border=""
           >
-            <Icon as={RiUser2Line} fontSize={24}/>
+            <Icon as={RiUser2Line} fontSize={24} />
             <Text fontWeight="bold">ETAPA 1</Text>
             <Text>Liberação do cadastro de usuário na nova versão</Text>
             <Text fontSize="sm">A partir do dia 27/02/2021 23:59h</Text>
@@ -146,20 +146,23 @@ export default function Home() {
             backdropBlur="100px"
             p="6"
           >
-            <Icon as={RiFilePaper2Line} fontSize={24}/>
+            <Icon as={RiFilePaper2Line} fontSize={24} />
             <Text fontWeight="bold">ETAPA 2</Text>
             <Text>Liberação da emissão de notas na versão nova</Text>
             <Text fontSize="sm">A partir do dia 01/03/2021</Text>
           </Stack>
 
-         
+
         </SimpleGrid>
 
-        {/* <Text textAlign="center" fontSize={{ base: "md", md: "1xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
-          Liberação da etapa 2 - Emissão de notas na nova versão:
+        <Text textAlign="center" fontSize={{ base: "1xl", md: "4xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
+          Informações sobre o atendimento via chat.
         </Text>
 
-        <Text id="contador" textAlign="left" fontSize={{ base: "1xl", md: "4xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1" /> */}
+        <Text textAlign="center" fontSize={{ base: "1xl", md: "2xl" }}>O nosso atendimento é feito de 8h às 17h. Todos os dias. Após este horário, você pode enviar um
+          e-mail para o nosso suporte no contato.fazenda@itaborai.rj.gov.br
+        </Text>
+
 
         <Text textAlign="justify" fontSize={{ base: "md", sm: "xl" }}>Se você é contador ou empresário, não fique de fora, confira o que mudou na nossa Nota Fiscal (A Moreninha), ficou ainda mais rápido e fácil fazer a emissão das suas notas fiscais,
           fique por dentro das melhorias e novidades que implantamos para aprimorar o nosso sistema. Você pode mandar
@@ -178,7 +181,7 @@ export default function Home() {
             px="12"
             spacing="4"
             onClick={onOpen}
-           cursor="pointer"
+            cursor="pointer"
           >
             <Icon as={RiUser2Line} fontSize="25" />
             <Text fontSize="lg">Cadastre-se aqui</Text>
