@@ -26,20 +26,10 @@ export default function Home() {
         <title>A Moreninha - Nota Fiscal - Secretaria de Fazenda de Itaboraí</title>
       </Head>
 
-      {/* <HStack bg="#004B8B" justify="space-between" p="4" borderBottom="1px solid rgba(255, 255, 255, 0.2);">
-
-        <HStack>
-          <Image src="/moreninha.png" w="70px" />
-          <Text fontSize="2xl" fontWeight="bold">A Moreninha</Text>
-        </HStack>
-        <Image src="/prefeitura.png" w="150px" h="40px" alt="prefeitura" />
-        <Image src="/logo.svg" w="150px" h="35px" alt="fazenda" />
-
-      </HStack> */}
 
       <Header />
 
-      <Hero onOpen={onOpen}/>
+      <Hero onOpen={onOpen} />
 
 
       <Stack align="center" m="0 auto" maxWidth="1120" spacing={8} p="4" my="6">
@@ -83,6 +73,13 @@ export default function Home() {
         </Text>
 
         <Button p="4" href="mailto:contato.fazenda@itaborai.rj.gov.br" as={Link} colorScheme="blue">Envie um e-mail para a Fazenda</Button>
+
+        <HStack bg="#004B8B" justify="space-between" p="4" >
+
+          <Image src="/prefeitura.png" w="150px" h="40px" alt="prefeitura" />
+          <Image src="/logo.svg" w="150px" h="35px" alt="fazenda" />
+
+        </HStack>
 
       </Stack>
 
@@ -137,6 +134,8 @@ export default function Home() {
           </ModalFooter>
         </ModalContent>
       </Modal>
+
+
 
 
 

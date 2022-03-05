@@ -20,7 +20,7 @@ export function Hero({ onOpen }) {
             >
                 <Stack justify="space-between" display={{ base: "flex", sm: "flex", md: "none", lg: "flex" }}>
                     <Box>
-                        <Text fontSize="sm">Nota fiscal de serviços</Text>
+                        <Text fontSize="sm">Nota fiscal de serviços de Itaboraí</Text>
                         <Text fontWeight="bold" fontSize="lg">A MORENINHA DE CARA NOVA</Text>
                     </Box>
 
@@ -86,7 +86,7 @@ export function Hero({ onOpen }) {
                 <Stack justify="space-between" spacing="20" position="relative">
                     <Stack spacing={8}>
 
-                        <Box
+                        {/* <Box
                             position="absolute"
                             top={{ base: "-60px", md: "-40px" }}
                             left={{ base: "-70px", md: "-50px" }}
@@ -98,7 +98,7 @@ export function Hero({ onOpen }) {
                                 height="120px"
                                 alt="Circle"
                             />
-                        </Box>
+                        </Box> */}
 
                         <Text
                             fontSize={{ base: "4xl", sm: "7xl" }}
