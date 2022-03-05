@@ -11,10 +11,10 @@ import {
   Box,
 } from '@chakra-ui/react'
 
-import Script from 'next/script'
-
 import Head from 'next/head'
-import { RiFilePaper2Line, RiFilePaperLine, RiMessageLine, RiUser2Line, RiVideoChatLine } from 'react-icons/ri'
+import { RiFilePaper2Line, RiUser2Line } from 'react-icons/ri'
+import { Header } from '../components/Header'
+import { Hero } from '../components/Hero'
 
 export default function Home() {
 
@@ -22,48 +22,68 @@ export default function Home() {
 
   return (
     <>
-
-      {/* <Script id="countdown " dangerouslySetInnerHTML={{
-        __html: `
-         var countDownDate = new Date("Feb 28, 2022 23:59:53").getTime();
-
-         // Update the count down every 1 second
-         var x = setInterval(function() {
- 
-         // Get today's date and time
-         const now = new Date().getTime();
- 
-         // Find the distance between now and the count down date
-         var distance = countDownDate - now;
- 
-         // Time calculations for days, hours, minutes and seconds
-         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
- 
-         // Display the result in the element with id="demo"
-         document.getElementById("contador").innerHTML = days + "d " + hours + "h "
-         + minutes + "m " + seconds + "s ";
- 
-         // If the count down is finished, write some text
-         if (distance < 0) {
-           clearInterval(x);
-         document.getElementById("demo").innerHTML = "EXPIRED";
-   }
- }, 1000);
-      `}} /> */}
-
-
       <Head>
         <title>A Moreninha - Nota Fiscal - Secretaria de Fazenda de Itaboraí</title>
       </Head>
 
-      <Stack d="flex" m="0 auto" align="center" p="8">
+      {/* <HStack bg="#004B8B" justify="space-between" p="4" borderBottom="1px solid rgba(255, 255, 255, 0.2);">
+
         <HStack>
-          <Image src="/prefeitura.png" w="150px" h="40px" alt="prefeitura" />
-          <Image src="/logo.svg" w="150px" h="35px" alt="fazenda" />
+          <Image src="/moreninha.png" w="70px" />
+          <Text fontSize="2xl" fontWeight="bold">A Moreninha</Text>
         </HStack>
+        <Image src="/prefeitura.png" w="150px" h="40px" alt="prefeitura" />
+        <Image src="/logo.svg" w="150px" h="35px" alt="fazenda" />
+
+      </HStack> */}
+
+      <Header />
+
+      <Hero onOpen={onOpen}/>
+
+
+      <Stack align="center" m="0 auto" maxWidth="1120" spacing={8} p="4" my="6">
+
+        <SimpleGrid columns={3} gap="4" w="100%" minChildWidth={320}>
+          <Stack
+            bg="rgba(255, 255, 255, 0.2);"
+            borderRadius="5"
+            backdropBlur="100px"
+            p="6"
+            border=""
+          >
+            <Icon as={RiUser2Line} fontSize={24} />
+            <Text fontWeight="bold">ETAPA 1</Text>
+            <Text>Liberação do cadastro de usuário na nova versão</Text>
+            <Text fontSize="sm">A partir do dia 27/02/2021 23:59h</Text>
+          </Stack>
+
+          <Stack
+            bg="rgba(255, 255, 255, 0.09);"
+            borderRadius="5"
+            backdropBlur="100px"
+            p="6"
+          >
+            <Icon as={RiFilePaper2Line} fontSize={24} />
+            <Text fontWeight="bold">ETAPA 2</Text>
+            <Text>Liberação da emissão de notas na versão nova</Text>
+            <Text fontSize="sm">A partir do dia 01/03/2021</Text>
+          </Stack>
+
+
+        </SimpleGrid>
+
+        <Text id="horariodeatendimento" textAlign="center" fontSize={{ base: "1xl", md: "4xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
+          Informações sobre o atendimento via chat.
+        </Text>
+
+        <Text textAlign="center" fontSize={{ base: "1xl", md: "2xl" }}>O nosso atendimento é feito de 8h às 17h. Todos os dias excetos aos finais de semana, no
+          sábado o nosso horário de atendimento é de 8h às 14h. Após este horário, você pode enviar um
+          e-mail para o nosso suporte no contato.fazenda@itaborai.rj.gov.br
+        </Text>
+
+        <Button p="4" href="mailto:contato.fazenda@itaborai.rj.gov.br" as={Link} colorScheme="blue">Envie um e-mail para a Fazenda</Button>
+
       </Stack>
 
       <Modal isOpen={isOpen} onClose={onClose}>
@@ -117,114 +137,6 @@ export default function Home() {
           </ModalFooter>
         </ModalContent>
       </Modal>
-
-      <Stack align="center" m="0 auto" maxWidth="1120" spacing={8} p="4" my="6">
-
-        <Image src="/moreninha.png" w="100px" />
-
-        <Text textAlign="center" fontSize={{ base: "1xl", md: "4xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
-          Nossa Nota Fiscal irá atualizar, uma nova versão está chegando.
-        </Text>
-
-        <SimpleGrid columns={3} gap="4" w="100%" minChildWidth={320}>
-          <Stack
-            bg="rgba(255, 255, 255, 0.2);"
-            borderRadius="5"
-            backdropBlur="100px"
-            p="6"
-            border=""
-          >
-            <Icon as={RiUser2Line} fontSize={24} />
-            <Text fontWeight="bold">ETAPA 1</Text>
-            <Text>Liberação do cadastro de usuário na nova versão</Text>
-            <Text fontSize="sm">A partir do dia 27/02/2021 23:59h</Text>
-          </Stack>
-
-          <Stack
-            bg="rgba(255, 255, 255, 0.09);"
-            borderRadius="5"
-            backdropBlur="100px"
-            p="6"
-          >
-            <Icon as={RiFilePaper2Line} fontSize={24} />
-            <Text fontWeight="bold">ETAPA 2</Text>
-            <Text>Liberação da emissão de notas na versão nova</Text>
-            <Text fontSize="sm">A partir do dia 01/03/2021</Text>
-          </Stack>
-
-
-        </SimpleGrid>
-
-        <Text textAlign="center" fontSize={{ base: "1xl", md: "4xl" }} fontFamily="Montserrat" fontWeight="bold" lineHeight="1">
-          Informações sobre o atendimento via chat.
-        </Text>
-
-        <Text textAlign="center" fontSize={{ base: "1xl", md: "2xl" }}>O nosso atendimento é feito de 8h às 17h. Todos os dias. Após este horário, você pode enviar um
-          e-mail para o nosso suporte no contato.fazenda@itaborai.rj.gov.br
-        </Text>
-
-
-        <Text textAlign="justify" fontSize={{ base: "md", sm: "xl" }}>Se você é contador ou empresário, não fique de fora, confira o que mudou na nossa Nota Fiscal (A Moreninha), ficou ainda mais rápido e fácil fazer a emissão das suas notas fiscais,
-          fique por dentro das melhorias e novidades que implantamos para aprimorar o nosso sistema. Você pode mandar
-          um e-mail ou falar conosco através do chat de atendimento abaixo, nossos operadores estão prontos para responder você! Se optar por mandar e-mail, o tempo médio de resposta é de no máximo 16 horas devido a alta demanda.
-        </Text>
-
-
-        <SimpleGrid columns={3} gap={2} minChildWidth={320} w="100%" justify="flex-start" m="0 auto" maxWidth="1120" p="4" my="6">
-
-          <HStack
-            align="center"
-            bg="rgba(255, 255, 255, 0.25);"
-            borderRadius="5"
-            h="80px"
-            backdropBlur="100px"
-            px="12"
-            spacing="4"
-            onClick={onOpen}
-            cursor="pointer"
-          >
-            <Icon as={RiUser2Line} fontSize="25" />
-            <Text fontSize="lg">Cadastre-se aqui</Text>
-          </HStack>
-
-          <HStack
-            align="center"
-            bg="rgba(255, 255, 255, 0.25);"
-            borderRadius="5"
-            h="80px"
-            backdropBlur="100px"
-            px="12"
-            spacing="4"
-            as={Link}
-            cursor="pointer"
-            href="https://youtube.com/playlist?list=PLQFxcuRo_0uo46H8xmLSrnvX1JsM0_WJC"
-            target="_blank"
-          >
-            <Icon as={RiVideoChatLine} fontSize="25" />
-            <Text fontSize="lg">Acesse os tutoriais</Text>
-          </HStack>
-
-          {/* <HStack
-            align="center"
-            bg="rgba(255, 255, 255, 0.25);"
-            borderRadius="5"
-            h="80px"
-            backdropBlur="100px"
-            px="12"
-            spacing="4"
-            as={Link}
-            cursor="not-allowed"
-            href="#"
-          >
-            <Icon as={RiMessageLine} fontSize="25" />
-            <Text fontSize="lg">Fale conosco</Text>
-          </HStack> */}
-
-        </SimpleGrid>
-
-        <Button p="4" href="mailto:contato.fazenda@itaborai.rj.gov.br" as={Link} colorScheme="blue">Envie um e-mail para a Fazenda</Button>
-
-      </Stack>
 
 
 
