@@ -15,6 +15,7 @@ import Head from 'next/head'
 import { RiFilePaper2Line, RiUser2Line } from 'react-icons/ri'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
+import { Tutoriais } from '../components/Tutoriais'
 
 export default function Home() {
 
@@ -82,6 +83,8 @@ export default function Home() {
         </HStack>
 
       </Stack>
+
+      <Tutoriais />
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />

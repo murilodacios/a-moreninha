@@ -151,7 +151,7 @@ export function Hero({ onOpen }) {
                             spacing="4"
                             as={Link}
                             cursor="pointer"
-                            href="https://youtube.com/playlist?list=PLQFxcuRo_0uo46H8xmLSrnvX1JsM0_WJC"
+                            href="https://www.youtube.com/playlist?list=PLQFxcuRo_0ur05CATa8q8xvGZTwzepNBI"
                             target="_blank"
                         >
                             <Icon as={RiVideoChatLine} fontSize="25" />
