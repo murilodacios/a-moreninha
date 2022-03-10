@@ -70,10 +70,10 @@ export default function Home() {
 
         <Text textAlign="center" fontSize={{ base: "1xl", md: "2xl" }}>O nosso atendimento é feito de 8h às 17h. Todos os dias excetos aos finais de semana, no
           sábado o nosso horário de atendimento é de 8h às 14h. Após este horário, você pode enviar um
-          e-mail para o nosso suporte no contato.fazenda@itaborai.rj.gov.br
+          e-mail para o nosso suporte no empresarial.sefaz@itaborai.rj.gov.br
         </Text>
 
-        <Button p="4" href="mailto:contato.fazenda@itaborai.rj.gov.br" as={Link} colorScheme="blue">Envie um e-mail para a Fazenda</Button>
+        <Button p="4" href="mailto:empresarial.sefaz@itaborai.rj.gov.br" as={Link} colorScheme="blue">Envie um e-mail para a Fazenda</Button>
 
         <HStack bg="#004B8B" justify="space-between" p="4" >
 
