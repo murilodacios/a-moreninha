@@ -20,7 +20,7 @@ export function Tutoriais() {
                     <Text>Cadastro inicial e primeiro acesso</Text>
                     <iframe
                         width="100%"
-                        height="315" src="https://www.youtube.com/embed/abZwSxu_YSI"
+                        height="315" src="https://www.youtube.com/embed/tZjKMT4FHDc"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; 
                         encrypted-media; gyroscope; picture-in-picture; fullscreen">
@@ -31,7 +31,7 @@ export function Tutoriais() {
                     <Text>Emissão de notas fiscais (Tributação Normal)</Text>
                     <iframe
                         width="100%"
-                        height="315" src="https://www.youtube.com/embed/Zq2dCclpJ-A"
+                        height="315" src="https://www.youtube.com/embed/eKMkHuTFYLc"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; 
                         encrypted-media; gyroscope; picture-in-picture; fullscreen">
