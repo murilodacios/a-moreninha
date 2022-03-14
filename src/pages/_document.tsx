@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet" />
-                    <script src="//code-sa1.jivosite.com/widget/doDos0PXgk" async></script>
+                    <script src="//code-sa1.jivosite.com/widget/zXsYFIYr7C" async></script>
                 </Head>
                 <body>
                     <Main />
