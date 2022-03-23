@@ -37,6 +37,20 @@ export function Tutoriais() {
                         encrypted-media; gyroscope; picture-in-picture; fullscreen">
                     </iframe>
                 </Stack>
+
+            </SimpleGrid>
+
+            <SimpleGrid columns={2} minChildWidth="350px" mt="8" gap="4">
+                <Stack spacing="4">
+                    <Text>Emissão de notas fiscais (Simples Nacional)</Text>
+                    <iframe
+                        width="100%"
+                        height="315" src="https://www.youtube.com/embed/e6du1LzuUFU"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; 
+                        encrypted-media; gyroscope; picture-in-picture; fullscreen">
+                    </iframe>
+                </Stack>
             </SimpleGrid>
 
         </Box>
