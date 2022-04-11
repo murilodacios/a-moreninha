@@ -46,7 +46,7 @@ export function Infos() {
           </Text>
 
           <Box>
-            <Button bg="blue.100" color="blue.300" w={{ base: "300px", sm: "300px" }} h="50px">
+            <Button bg="blue.100" color="blue.300" w={{ base: "150px", sm: "300px" }} h="50px">
               <Link href="mailto:empresarial.sefaz@itaborai.rj.gov.br">
                 <a>
                   Enviar e-mail

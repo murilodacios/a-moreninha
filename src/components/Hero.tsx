@@ -63,12 +63,12 @@ export function Hero() {
                                 </Box>
 
                                 <Text
-                                    fontSize={{ base: "4xl", sm: "7xl" }}
+                                    fontSize={{ base: "4xl", sm: "6xl" }}
                                     fontFamily="Montserrat"
                                     fontWeight="bold"
                                     lineHeight="106%"
                                 >
-                                   A Nota fiscal está de cara nova.
+                                   A Nota fiscal está de cara nova. Venha conferir!
                                 </Text>
                                 <Text fontSize="2xl" color="gray.400">Tem dúvidas quanto ao uso da nova versão do sistema? Chame-nos no chat! Estamos disponíveis</Text>
                             </Stack>
