@@ -1,6 +1,6 @@
-import { Flex, Text, HStack, Icon, Image } from "@chakra-ui/react";
+import { Flex, Text, HStack, Icon, Image, Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 
-import { RiHome2Line } from 'react-icons/ri'
+import { RiHome2Line, RiMenuLine, RiPhoneLine } from 'react-icons/ri'
 
 import Link from 'next/link'
 
@@ -8,11 +8,11 @@ export function Header() {
     return (
         <>
             <Flex
-                px="4"
                 py="6"
-                bg="rgba(255, 255, 255, 0.1);"
-                color="white"
-                backdropBlur="100px"
+                color="blue.500"
+                fontFamily="Archivo"
+                bg="white"
+               
             >
                 <Flex
                     align="center"
@@ -25,32 +25,72 @@ export function Header() {
                         href="/"
                     >
                         <a>
-                            <HStack>
-                                <Image src="/moreninha.png" w="70px" />
-                                <Text fontSize="lg">A Moreninha - NFS-e</Text>
-                            </HStack>
+                            <Image src="/logo.svg" width="170px" height="50" alt="logo" />
                         </a>
                     </Link>
 
-                    <HStack spacing={6} d={{ base: "none", md: "flex" }}>
+                    <HStack spacing={6} d={{ base: "none", md: "flex" }} color="gray.300">
                         <Link
-                            href="/"
+                            href="https://contribuinte.ib.itaborai.rj.gov.br"
                         >
                             <a>
-                                <HStack
-                                    align="center"
-                                >
-                                    <Icon as={RiHome2Line} />
-                                    <Text>Página Inicial</Text>
-                                </HStack>
+                                <Text>Portal do Contribuinte</Text>
                             </a>
                         </Link>
                         <Link
-                            href="https://prefeituradeitaborai.online" 
+                            href="https://contribuinte.ib.itaborai.rj.gov.br/blog"
                         >
-                            <a>Nota Fiscal</a>
+                            <a>Notícias</a>
+                        </Link>
+                        <Link
+                            href="https://contribuinte.ib.itaborai.rj.gov.br/#servicos"
+                        >
+                            <a>
+                                <Text>
+                                    Nossos serviços
+                                </Text>
+                            </a>
+                        </Link>
+                        <Link
+                            href="https://contribuinte.ib.itaborai.rj.gov.br/#atendimento"
+                        >
+                            <a>Atendimento</a>
                         </Link>
                     </HStack>
+
+                    <Menu>
+                        <MenuButton bg="transparent" d={{ base: "flex", sm: "none" }}>
+                            <Icon as={RiMenuLine} />
+                        </MenuButton>
+                        <MenuList>
+                            <MenuItem>
+                                <Link
+                                    href="https://contribuinte.ib.itaborai.rj.gov.br/#servicos"
+                                >
+                                    <a>
+                                        <Text>
+                                            Nossos serviços
+                                        </Text>
+                                    </a>
+                                </Link>
+                            </MenuItem>
+                            <MenuItem>
+                                <Link
+                                    href="https://contribuinte.ib.itaborai.rj.gov.br/#atendimento"
+                                >
+                                    <a>Atendimento</a>
+                                </Link>
+                            </MenuItem>
+                            <MenuItem>
+                                <Link
+                                    href="https://contribuinte.ib.itaborai.rj.gov.br/blog"
+                                >
+                                    <a>Notícias</a>
+                                </Link>
+                            </MenuItem>
+                        </MenuList>
+                    </Menu>
+
                 </Flex>
             </Flex>
         </>

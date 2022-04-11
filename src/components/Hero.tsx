@@ -6,9 +6,12 @@ import {
     ModalHeader,
     ModalFooter,
     ModalBody,
-    ModalCloseButton
+    ModalCloseButton,
+    AvatarGroup,
+    Avatar
 } from "@chakra-ui/react";
-import { RiArrowLeftRightLine, RiChatSmile2Line, RiChatVoiceLine, RiFacebookFill, RiInstagramFill, RiLinkedinFill, RiPenNibFill, RiUser2Line, RiVideoChatLine } from "react-icons/ri";
+import { RiArrowLeftRightLine, RiChatSmile2Line, RiChatVoiceLine, RiFacebookFill, RiHeadphoneFill, RiInstagramFill, RiLinkedinFill, RiPenNibFill, RiUser2Line, RiVideoChatLine } from "react-icons/ri";
+import { Header } from "./Header";
 
 export function Hero() {
 
@@ -16,237 +19,159 @@ export function Hero() {
 
     return (
         <>
-
-            <Modal isOpen={isOpen} onClose={onClose}>
-                <ModalOverlay />
-                <ModalContent>
-                    <ModalHeader color="gray.800">Cadastro no sistema de NFS-e</ModalHeader>
-                    <ModalCloseButton color="gray.800" />
-                    <ModalBody color="gray.800">
-
-                        <Stack spacing="2">
-                            <Stack spacing="4" bg="#eee" p="3">
-                                <Text fontWeight="bold">Cadastro de prestadores de serviços localizados em Itaboraí</Text>
-                                <Text fontSize="sm">Quem deve se cadastrar nessa área:
-                                    <br></br>
-                                    • Prestadores de Serviços estabelecidos que estão obrigados à emissão de NFse.<br></br>
-                                </Text>
-                                <Box>
-                                    <Button colorScheme="blue" target="_blank" as={Link} href="https://prefeituradeitaborai.online/engine8.php?m=modnfse_pref_nfe_inicial">Cadastre-se</Button>
-                                </Box>
-                            </Stack>
-
-                            <Stack spacing="4" bg="#eee" p="3">
-                                <Text fontWeight="bold">Cadastro de tomadores de serviços</Text>
-                                <Text fontSize="sm">Quem deve se cadastrar nessa área:
-                                    <br></br>
-                                    • Tomadores de serviços que estão estabelecidos ou não no Município de Itaboraí.<br></br>
-                                </Text>
-                                <Box>
-                                    <Button colorScheme="teal" target="_blank" as={Link} href="https://prefeituradeitaborai.online/engine8.php?m=modissretencao_even_home">Cadastre-se</Button>
-                                </Box>
-                            </Stack>
-
-                            <Stack spacing="4" bg="#eee" p="3">
-                                <Text fontWeight="bold">ISS Direto</Text>
-                                <Text fontSize="sm">Quem deve se cadastrar nessa área:
-                                    <br></br>
-                                    • Todos os contribuintes de fora do município que devem recolher o ISSQN no local da execução do serviço.
-                                </Text>
-                                <Box>
-                                    <Button colorScheme="teal" target="_blank" as={Link} href="https://prefeituradeitaborai.online/engine8.php?m=modissdireto_direto_home">Cadastre-se</Button>
-                                </Box>
-                            </Stack>
-                        </Stack>
-
-                    </ModalBody>
-
-                    <ModalFooter>
-                        <Button colorScheme='blue' mr={3} onClick={onClose}>
-                            Fechar
-                        </Button>
-                    </ModalFooter>
-                </ModalContent>
-            </Modal>
-
-
             <Box
-                bg="blue.600"
+                bg="linear-gradient(346.93deg, #FCFCFC 7.78%, rgba(252, 252, 252, 0) 54.44%);"
+                fontFamily="Archivo"
             >
-                <Grid
-                    maxWidth={1400}
+                <Stack
+                    backgroundImage="url('/fundo-linhas.png')"
+                    backgroundPosition="center"
+                    backgroundRepeat="no-repeat"
+                    maxWidth={1280}
                     m="0 auto"
-                    flex='1'
-                    gap='12'
-                    gridTemplateColumns={{ base: "1fr", sm: "1fr", md: "1fr", lg: "1fr 2fr 1fr" }}
-                    align='flex-start'
-                    justifyContent="center"
-                    color="white"
+                    justify="space-between"
                     px="4"
-                    py={{ base: "16", sm: "32" }}
                 >
-                    <Stack justify="space-between" display={{ base: "flex", sm: "flex", md: "none", lg: "flex" }}>
-                        <Box>
-                            <Text fontSize="sm">Nota fiscal de serviços de Itaboraí</Text>
-                            <Text fontWeight="bold" fontSize="lg">A MORENINHA DE CARA NOVA</Text>
-                        </Box>
 
-                        <Box>
-                            <HStack>
-                                <Icon as={RiChatSmile2Line} />
-                                <Text> Fique informado</Text>
-                            </HStack>
+                    <Header />
 
-                            <HStack mt="2">
+                    <Grid
+                        flex='1'
+                        gap='12'
+                        gridTemplateColumns={{ base: "1fr", sm: "1fr", md: "1fr", lg: "1fr 1fr" }}
+                        align='flex-start'
+                        justifyContent="flex-start"
+                        color="#00325C"
+                        py={{ base: "8", sm: "16" }}
+                    >
 
-                                <Flex
-                                    bg="blue.100"
-                                    color="blue.600"
-                                    w="40px"
-                                    h="40px"
-                                    borderRadius="6"
-                                    d="flex"
-                                    align="center"
-                                    justify="center"
-                                    as={Link}
-                                    href="https://www.instagram.com/fazendaitaborai/"
+                        <Stack spacing="20" position="relative">
+                            <Stack spacing={8}>
+
+                                <Box
+                                    position="absolute"
+                                    top={{ base: "-60px", md: "-40px" }}
+                                    left={{ base: "-70px", md: "-50px" }}
+                                    d={{ base: "none", sm: "inline" }}
                                 >
-                                    <Icon as={RiInstagramFill} fontSize="24" />
-                                </Flex>
+                                    <Image
+                                        src="/circle.svg"
+                                        width="120px"
+                                        height="120px"
+                                        alt="Circle"
+                                    />
+                                </Box>
 
-                                <Flex
-                                    bg="blue.100"
-                                    color="blue.600"
-                                    w="40px"
-                                    h="40px"
-                                    borderRadius="6"
-                                    d="flex"
-                                    align="center"
-                                    justify="center"
-                                    as={Link}
-                                    href="https://www.facebook.com/fazendaitaborai"
+                                <Text
+                                    fontSize={{ base: "4xl", sm: "7xl" }}
+                                    fontFamily="Montserrat"
+                                    fontWeight="bold"
+                                    lineHeight="106%"
                                 >
+                                   A Nota fiscal está de cara nova.
+                                </Text>
+                                <Text fontSize="2xl" color="gray.400">Tem dúvidas quanto ao uso da nova versão do sistema? Chame-nos no chat! Estamos disponíveis</Text>
+                            </Stack>
+                            <Button bg="blue.100" color="blue.300" w={{ base: "300px", sm: "300px" }} h="50px">
+                                <Link href="https://prefeituradeitaborai.online">
+                                    <a>
+                                        Acessar nota fiscal
+                                    </a>
+                                </Link>
+                            </Button>
 
-                                    <Icon as={RiFacebookFill} fontSize="24" />
+                        </Stack>
 
-                                </Flex>
+                        <Stack justify="flex-start" align="flex-end" position="relative">
 
-                                <Flex
-                                    bg="blue.100"
-                                    color="blue.600"
-                                    w="40px"
-                                    h="40px"
-                                    borderRadius="6"
-                                    d="flex"
-                                    align="center"
-                                    justify="center"
-                                    as={Link}
-                                    href="https://www.linkedin.com/company/secretaria-de-fazenda-de-itaborai"
-                                >
-                                    <Icon as={RiLinkedinFill} fontSize="24" />
-                                </Flex>
 
-                            </HStack>
-                        </Box>
-                    </Stack>
+                            <Flex
+                                bg="white"
+                                position="absolute"
+                                top="10"
+                                left="10"
+                                borderRadius="5"
+                                boxShadow="2px 4px 158px 49px rgba(0, 0, 0, 0.09)"
+                                width="64px"
+                                height="64px"
+                                align="center"
+                                justify="center"
+                            >
+                                <Icon as={RiHeadphoneFill} fontSize="23" />
+                            </Flex>
 
-                    <Stack justify="space-between" spacing="20" position="relative">
-                        <Stack spacing={8}>
+                            <Flex
+                                position="absolute"
+                                top="1"
+                                right="1"
+                                align="center"
+                                justify="center"
+                            >
+                                <Text color="gray.500">Atendimento online<br />
+                                    e humanizado.</Text>
+                            </Flex>
 
-                            {/* <Box
-                            position="absolute"
-                            top={{ base: "-60px", md: "-40px" }}
-                            left={{ base: "-70px", md: "-50px" }}
-                            d={{ base: "none", sm: "inline" }}
-                        >
+
+
                             <Image
-                                src="/circle.svg"
-                                width="120px"
-                                height="120px"
-                                alt="Circle"
+                                src="/homem-celular.png"
+                                width="100%"
+                                height="auto"
+                                padding="12"
                             />
-                        </Box> */}
-
-                            <Text
-                                fontSize={{ base: "4xl", sm: "7xl" }}
-                                fontFamily="Montserrat"
-                                fontWeight="bold"
-                                lineHeight="106%"
-                            >
-                                A Nota fiscal irá atualizar. Uma nova versão.
-                            </Text>
-                            <Text fontSize="lg">
-                                Se você é contador ou empresário, não fique de fora, confira o que mudou na nossa Nota Fiscal (A Moreninha),
-                                ficou ainda mais rápido e fácil fazer a emissão das suas notas fiscais, fique por dentro das melhorias e novidades que
-                                implantamos para aprimorar o nosso sistema. Você pode mandar um e-mail ou falar conosco através do chat de atendimento abaixo,
-                                nossos operadores estão prontos para responder você!
-
-                            </Text>
                         </Stack>
-                        <Button bg="#004B8B" color="white" w={{ base: "100%", sm: "350px" }} >
-                            <Link href="https://prefeituradeitaborai.online" target="_blank">Acesse a nota fiscal</Link>
-                        </Button>
-                    </Stack>
+                    </Grid>
 
-                    <Stack justify="flex-start">
-                        <Text>Comece por aqui</Text>
+                    <Stack
+                        justify="space-between"
+                        py={{ base: "4", sm: "12" }}
+                        direction={{ base: "column", md: "row" }}
+                    >
 
-                        <Stack spacing="1">
+                        <HStack>
+                            <AvatarGroup size='sm'>
+                                <Avatar name='Ryan Florence' src='https://bit.ly/ryan-florence' />
+                                <Avatar name='Segun Adebayo' src='https://bit.ly/sage-adebayo' />
+                                <Avatar name='Kent Dodds' src='https://bit.ly/kent-c-dodds' />
+                            </AvatarGroup>
+                            <Text>Junte-se ao nossos seguidores nas redes sociais</Text>
+                        </HStack>
 
-                            <HStack
-                                align="center"
-                                bg="rgba(255, 255, 255, 0.25);"
-                                borderRadius="5"
-                                h="80px"
-                                backdropBlur="100px"
-                                px="12"
-                                spacing="4"
-                                onClick={onOpen}
-                                cursor="pointer"
-                            >
-                                <Icon as={RiUser2Line} fontSize="25" />
-                                <Text fontSize="lg">Cadastre-se aqui</Text>
-                            </HStack>
+                        <HStack spacing={{ base: "2", sm: "4" }} py={{ base: "6", sm: "0" }}>
 
-                            <HStack
-                                align="center"
-                                bg="rgba(255, 255, 255, 0.25);"
-                                borderRadius="5"
-                                h="80px"
-                                backdropBlur="100px"
-                                px="12"
-                                spacing="4"
+                            <Flex
                                 as={Link}
                                 cursor="pointer"
-                                href="https://www.youtube.com/playlist?list=PLQFxcuRo_0ur05CATa8q8xvGZTwzepNBI"
-                                target="_blank"
+                                href="https://www.instagram.com/fazendaitaborai/"
                             >
-                                <Icon as={RiVideoChatLine} fontSize="25" />
-                                <Text fontSize="lg">Acesse os tutoriais</Text>
-                            </HStack>
+                                <Icon as={RiInstagramFill} fontSize="24" color="blue.400" cursor="pointer" />
+                            </Flex>
 
-                            <HStack
-                                align="center"
-                                bg="rgba(255, 255, 255, 0.25);"
-                                borderRadius="5"
-                                h="80px"
-                                backdropBlur="100px"
-                                px="12"
-                                spacing="4"
+                            <Flex
                                 as={Link}
                                 cursor="pointer"
-                                href="#horariodeatendimento"
+                                href="https://www.facebook.com/fazendaitaborai"
                             >
-                                <Icon as={RiChatVoiceLine} fontSize="25" />
-                                <Text fontSize="lg">Atendimento via chat</Text>
-                            </HStack>
 
-                        </Stack>
+                                <Icon as={RiFacebookFill} fontSize="24" color="blue.400" cursor="pointer" />
+
+                            </Flex>
+
+                            <Flex
+                                as={Link}
+                                cursor="pointer"
+                                href="https://www.linkedin.com/company/secretaria-de-fazenda-de-itaborai"
+                            >
+                                <Icon as={RiLinkedinFill} fontSize="24" color="blue.400" cursor="pointer" />
+                            </Flex>
+
+                        </HStack>
 
                     </Stack>
 
-                </Grid>
+                </Stack>
             </Box>
+
 
         </>
 
