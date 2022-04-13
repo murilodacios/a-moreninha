@@ -17,12 +17,6 @@ export default function Home() {
       <Head>
         <title>A Moreninha - Nota Fiscal - Secretaria de Fazenda de Itaboraí</title>
       </Head>
-
-      <Flex bg="yellow.300" align="center" justify="center" p="4">
-        <Text>Nosso chat de atendimento neste site está com problemas técnicos, estamos trabalhando para retomar
-          o mais rápido possível.
-        </Text>
-      </Flex>
       
       <Hero />
       
