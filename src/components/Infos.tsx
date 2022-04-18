@@ -39,8 +39,8 @@ export function Infos() {
             color="gray.400"
             fontWeight="400"
           >
-            O nosso atendimento é feito de 8h às 17h. Todos os dias excetos aos finais de semana,
-            no sábado o nosso horário de atendimento exclusivo para nota fiscal é de 8h às 14h. Após este horário, você pode enviar
+            O nosso atendimento é feito de 8h às 17h. Todos os dias, exceto aos Domingos e Feriados,
+            no Sábado o nosso horário de atendimento exclusivo para Nota Fiscal é de 8h às 14h. Após este horário, você pode enviar
             um e-mail para o nosso suporte no empresarial.sefaz@itaborai.rj.gov.br
 
           </Text>
