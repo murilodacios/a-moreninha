@@ -68,7 +68,7 @@ export function Hero() {
                                     fontWeight="bold"
                                     lineHeight="106%"
                                 >
-                                   A Nota Fiscal (NFS-e) está de cara nova. Venha conferir!
+                                   A Nota Fiscal está de cara nova. Venha conferir!
                                 </Text>
                                 <Text fontSize="2xl" color="gray.400">Tem dúvidas quanto ao uso da nova versão do sistema? Chame-nos no chat! Estamos disponíveis</Text>
                             </Stack>
