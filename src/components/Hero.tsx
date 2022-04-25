@@ -24,9 +24,6 @@ export function Hero() {
                 fontFamily="Archivo"
             >
                 <Stack
-                    backgroundImage="url('/fundo-linhas.png')"
-                    backgroundPosition="center"
-                    backgroundRepeat="no-repeat"
                     maxWidth={1280}
                     m="0 auto"
                     justify="space-between"
@@ -42,10 +39,10 @@ export function Hero() {
                         align='flex-start'
                         justifyContent="flex-start"
                         color="#00325C"
-                        py={{ base: "8", sm: "16" }}
+                        py={{ base: "8", sm: "6" }}
                     >
 
-                        <Stack spacing="20" position="relative">
+                        <Stack spacing="10" position="relative">
                             <Stack spacing={8}>
 
                                 <Box
@@ -63,12 +60,12 @@ export function Hero() {
                                 </Box>
 
                                 <Text
-                                    fontSize={{ base: "4xl", sm: "6xl" }}
+                                    fontSize={{ base: "4xl", sm: "5xl" }}
                                     fontFamily="Montserrat"
                                     fontWeight="bold"
                                     lineHeight="106%"
                                 >
-                                   A Nota Fiscal está de cara nova. Venha conferir!
+                                    A Moreninha (NFS-e) está de cara nova. Venha conferir!
                                 </Text>
                                 <Text fontSize="2xl" color="gray.400">Tem dúvidas quanto ao uso da nova versão do sistema? Chame-nos no chat! Estamos disponíveis</Text>
                             </Stack>
@@ -80,15 +77,22 @@ export function Hero() {
                                 </Link>
                             </Button>
 
+
+                            <Link href="#servicos">
+                                <a>
+                                    Ou, se preferir, acesse nossos manuais clicando aqui.
+                                </a>
+                            </Link>
+
+
                         </Stack>
 
                         <Stack justify="flex-start" align="flex-end" position="relative">
 
-
                             <Flex
                                 bg="white"
                                 position="absolute"
-                                top="10"
+                                top="100px"
                                 left="10"
                                 borderRadius="5"
                                 boxShadow="2px 4px 158px 49px rgba(0, 0, 0, 0.09)"
@@ -102,29 +106,38 @@ export function Hero() {
 
                             <Flex
                                 position="absolute"
+                                top="10px"
+                                left="1"
+                                align="center"
+                                justify="center"
+                            >
+                                <Text color="gray.500">Atendimento online<br />
+                                    via chat disponível</Text>
+                            </Flex>
+
+                            {/* <Flex
+                                position="absolute"
                                 top="1"
                                 right="1"
                                 align="center"
                                 justify="center"
                             >
                                 <Text color="gray.500">Atendimento online<br />
-                                    e humanizado.</Text>
-                            </Flex>
-
-
+                                    via chat disponível</Text>
+                            </Flex> */}
 
                             <Image
                                 src="/homem-celular.png"
                                 width="100%"
                                 height="auto"
-                                padding="12"
+                                p="10"
                             />
                         </Stack>
                     </Grid>
 
                     <Stack
                         justify="space-between"
-                        py={{ base: "4", sm: "12" }}
+                        pb={{ base: "4", sm: "12" }}
                         direction={{ base: "column", md: "row" }}
                     >
 
