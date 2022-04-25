@@ -14,6 +14,7 @@ export function Infos() {
         px="4"
         fontFamily="Archivo"
         pt="8"
+        id="atendimento"
       >
 
         <Stack

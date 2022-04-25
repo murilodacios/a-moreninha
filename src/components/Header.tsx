@@ -43,7 +43,7 @@ export function Header() {
                             <a>Notícias</a>
                         </Link>
                         <Link
-                            href="https://contribuinte.ib.itaborai.rj.gov.br/#servicos"
+                            href="#servicos"
                         >
                             <a>
                                 <Text>
@@ -52,7 +52,7 @@ export function Header() {
                             </a>
                         </Link>
                         <Link
-                            href="https://contribuinte.ib.itaborai.rj.gov.br/#atendimento"
+                            href="#atendimento"
                         >
                             <a>Atendimento</a>
                         </Link>
