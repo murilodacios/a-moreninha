@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet"></link>
                  
-                    <script src="//code.jivosite.com/widget/rGxgQ3q3Zt" async></script>
+                    <script src="//code.jivosite.com/widget/hiANvxSqSI" async></script>
 
                 </Head>
                 <body>
